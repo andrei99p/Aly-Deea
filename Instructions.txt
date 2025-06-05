@@ -1,0 +1,114 @@
+Step 1: Structure and Aesthetic
+
+	Layout: Clean, modular sections with lots of white space
+
+	Color Palette: Red primary color, white background, dark text, with soft pastel accents
+
+	Typography: Friendly, geometric sans-serif fonts (similar to Inter, DM Sans, or Poppins)
+
+	Imagery: Custom illustrations, icons, minimalistic animations
+
+	Call to Actions (CTAs): Prominent buttons with consistent styling
+
+	Navigation: Sticky top nav
+
+	Footer: Multi-column layout with links and branding
+
+Step 2: Set Up
+
+	Typography styles (H1-H6, body, buttons)
+
+	Color palette (primary, secondary, neutral grays, background, accents)
+
+	Buttons (primary, secondary, ghost)
+
+	Form fields (inputs)
+
+	Navigation & footer components
+
+	Cards and icon blocks
+
+Step 3: Define the Page Structure (Wireframe Level)
+
+	1 Top Navigation Bar
+
+		Logo left
+
+
+	2 Hero Section
+
+		Left-aligned headline + subtext
+
+		Right-aligned illustration or image
+
+		Primary CTA button + secondary link
+
+	3 Logo Strip
+
+		Trusted by logos (grayscale for visual harmony)
+
+	4 Feature Blocks
+
+		Zigzag layout: Text left, image right (and alternates)
+
+		Icons for each feature
+
+	5 Product/Benefit Highlights
+
+		Reusable grid or tabs with simple icons
+
+	6 Testimonials / Social Proof
+
+		Cards with photos
+
+	7 Call-to-Action Section
+
+		Large CTA with supporting text
+
+	8 Footer
+
+		Contact information
+
+STEP 4: Design Components
+
+	1 Typography
+
+		H1: 48px bold
+		H2: 36px semi-bold
+		Body: 16-18px regular
+
+	2 Colors
+	Use a Brevo-like palette:
+
+		Primary Red: #d8231d
+		Accent Red: #fa6f60
+		Text: #111827
+		Background: #FFFFFF
+		Grays: #F3F4F6, #E5E7EB
+
+	3 Buttons
+
+		Primary: Filled red, white text
+		Secondary: White background, red border, red text
+
+	4 Cards & Icons
+
+		Use soft drop shadows, rounded corners (12px)
+		Simple icons in SVG or icon font (e.g., Lucide, Feather, Heroicons)
+
+	5 Animations
+
+		Light fade-ins on scroll
+		Hover states on buttons and cards
+
+STEP 5: Create Full Mockups
+	
+	1 Pages to include:
+		Homepage
+
+	2 Design for desktop first, then mobile responsiveness:
+
+		Stack elements vertically
+		Replace large illustrations with mobile-friendly ones
+		Optimize buttons and form fields for touch
+
