@@ -26,28 +26,30 @@
     <div class="container hero-content">
       <div class="hero-text">
         <h1>Bine ați venit la Aly&Deea Speed Logistics</h1>
-        <h4>Una dintre cele mai importante companii de logistica din Prahova, dedicată serviciilor logistice rapide și eficiente pentru afacerea ta.</p>
+        <h4>Una dintre cele mai importante companii de logistica din Prahova, dedicată serviciilor logistice rapide și eficiente pentru afacerea ta.</h4>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary">Solicită ofertă</a>
           <a href="#features" class="btn btn-secondary">Serviciile noastre</a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="Res/logo1.png" alt="Hero Illustration" />
+        <img src="Res/logo1.png" alt="Hero Illustration" draggable="false" />
       </div>
     </div>
   </section>
 
   <!-- Logo Strip -->
   <section class="logo-strip">
+    <div class="container">
+      <h4 style="text-align: center; margin-bottom: 2em; color: gray;">PARTENERI</h4>
+    </div>
+
     <div class="container logos">
-      <img src="Res/pin1.png" class="trusted-logo">
-      <img src="Res/dots.png" class="trusted-logo">
-      <img src="Res/dots.png" class="trusted-logo">
-      <img src="Res/dots.png" class="trusted-logo">
-      <img src="Res/dots.png" class="trusted-logo">
-      <img src="Res/dots.png" class="trusted-logo">
-      <img src="Res/pin2.png" class="trusted-logo">
+      <img src="Res/Boma.webp" class="trusted-logo" draggable="false">
+      <img src="Res/Elis.png" class="trusted-logo" draggable="false">
+      <img src="Res/Elpreco.png" class="trusted-logo" draggable="false">
+      <img src="Res/Dedeman.svg" class="trusted-logo" draggable="false">
+      <img src="Res/Adeplast.svg" class="trusted-logo" draggable="false">
       <!--<img src="Res/logo2.svg" alt="Partener 2" class="trusted-logo">
       <img src="Res/logo3.svg" alt="Partener 3" class="trusted-logo">
       <img src="Res/logo4.svg" alt="Partener 4" class="trusted-logo">-->
@@ -57,31 +59,31 @@
   <!-- Feature Blocks -->
   <section class="features" id="features">
     <div class="container">
-      <div class="feature-block zigzag">
+      <div class="feature-block">
         <div class="feature-text">
           <h2>Transport rapid</h2>
           <p>Livrăm marfa ta în cel mai scurt timp, oriunde în țară.</p>
         </div>
         <div class="feature-icon">
-          <img src="Res/icon1.svg" alt="Feature 1 Icon">
+          <img src="Res/stopwatch.png" alt="Feature 1 Icon">
         </div>
       </div>
-      <div class="feature-block zigzag reverse">
+      <div class="feature-block reverse">
         <div class="feature-icon">
-          <img src="Res/icon2.svg" alt="Feature 2 Icon">
+          <img src="Res/pin.png" alt="Feature 2 Icon">
         </div>
         <div class="feature-text">
           <h2>Monitorizare în timp real</h2>
           <p>Urmărești transportul tău în timp real, cu actualizări la fiecare pas.</p>
         </div>
       </div>
-      <div class="feature-block zigzag">
+      <div class="feature-block">
         <div class="feature-text">
           <h2>Siguranță garantată</h2>
           <p>Asigurăm cele mai bune conditii de transport pentru marfa ta.</p>
         </div>
         <div class="feature-icon">
-          <img src="Res/icon3.svg" alt="Feature 3 Icon">
+          <img src="Res/Check2.png" alt="Feature 3 Icon">
         </div>
       </div>
     </div>
@@ -91,17 +93,17 @@
   <section class="benefits" id="benefits">
     <div class="container benefit-grid">
       <div class="benefit-card">
-        <img src="Res/icon4.svg" alt="Benefit 1">
+        <img src="Res/route.png" alt="Benefit 1">
         <h3>Optimizare rută</h3>
         <p>Planificăm cele mai eficiente rute pentru a reduce costurile și timpul de livrare.</p>
       </div>
       <div class="benefit-card">
-        <img src="Res/icon5.svg" alt="Benefit 2">
+        <img src="Res/support.png" alt="Benefit 2">
         <h3>Suport dedicat</h3>
         <p>Echipa noastră este disponibilă pentru orice întrebare sau solicitare.</p>
       </div>
       <div class="benefit-card">
-        <img src="Res/icon6.svg" alt="Benefit 3">
+        <img src="Res/ideas.png" alt="Benefit 3">
         <h3>Flexibilitate</h3>
         <p>Oferim soluții personalizate pentru transportul mărfurilor, indiferent de volum sau destinație.</p>
       </div>
@@ -133,8 +135,14 @@
   <section class="cta-section">
     <div class="container cta-content">
       <h2>Ești gata să transporți cu noi?</h2>
-      <h4>Contactează-ne pentru o ofertă personalizată și descoperă avantajele colaborării cu unul dintre liderii logistici din Prahova!</h3>
-      <a href="#contact" class="btn btn-primary">Contactează-ne</a>
+      <h4>Contactează-ne pentru o ofertă personalizată și descoperă avantajele colaborării cu unul dintre liderii logistici din Prahova!</h4>
+        
+        <form>      
+          <input name="name" type="text" class="feedback-input" placeholder="Nume" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="text" class="feedback-input" placeholder="Mesaj"></textarea>
+          <input type="submit" class="btn btn-primary" value="Contactează-ne"/>
+        </form>
     </div>
   </section>
 
