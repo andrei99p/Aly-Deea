@@ -15,3 +15,25 @@ window.addEventListener('load', fadeInOnScroll);
 
 // Mobile nav toggle (optional, if you add a hamburger menu)
 // ... 
+
+// Smooth scroll without URL modification
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// Add click event listener to logo
+document.getElementById('logo').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}); 

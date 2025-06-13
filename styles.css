@@ -57,7 +57,7 @@ p, li, a, span {
   position: sticky;
   top: 0;
   background: var(--background);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.03);
   z-index: 100;
 }
 .nav-container {
@@ -67,10 +67,16 @@ p, li, a, span {
   padding: 1.5em 0;
 }
 .logo {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--primary-red);
   letter-spacing: 1px;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.logo img{
+  max-height: 4rem;
+  width: auto;
 }
 .nav-links {
   list-style: none;
@@ -107,25 +113,25 @@ p, li, a, span {
   z-index: 1;
 }
 .hero-image {
-  flex: 1 1 220px;
+  flex: 1 1 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(255,255,255,0.18);
-  border-radius: 18px;
-  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  border-radius: 1.125rem;
+  box-shadow: 0 0.5rem 2rem 0 rgba(31,38,135,0.18);
+  backdrop-filter: blur(0.75rem);
+  -webkit-backdrop-filter: blur(0.75rem);
   padding: 1em;
   margin-left: 1em;
-  max-width: 220px;
+  max-width: 13.75rem;
 }
 .hero-image img {
-  max-width: 160px;
+  max-width: 10rem;
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(218,35,29,0.08);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 1.5rem rgba(218,35,29,0.08);
 }
 .hero-cta {
   margin-top: 2em;
@@ -178,8 +184,6 @@ p, li, a, span {
   filter: grayscale(1);
   opacity: 0.7;
   max-height: 2rem;
-  height: 2rem;
-  max-width: 10vw;
   width: auto;
   transition: filter 0.3s, transform 0.3s, opacity 0.3s;
 }
@@ -199,25 +203,24 @@ p, li, a, span {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3em;
-  gap: 2em;
+  gap: 1em;
 }
 .feature-block.reverse {
   flex-direction: row-reverse;
 }
 .feature-text {
-  flex: 1 1 300px;
+  flex: 1 1 5rem;
 }
 .feature-icon {
-  flex: 1 1 200px;
+  flex: 1 1 5rem;
   display: flex;
   justify-content: center;
 }
 .feature-icon img {
   max-width: auto;
   max-height: 10rem;
-  border-radius: 12px;
-  /*background: var(--gray-light);*/
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.04);
 }
 
 /* Benefits Grid */
@@ -233,18 +236,18 @@ p, li, a, span {
 }
 .benefit-card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0,0,0,0.06);
   padding: 2em 1.5em;
   text-align: center;
-  flex: 1 1 220px;
-  max-width: 300px;
+  flex: 1 1 13.75rem;
+  max-width: 18.75rem;
   margin: 1em 0;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .benefit-card:hover {
-  box-shadow: 0 6px 24px rgba(218,35,29,0.10);
-  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0.375rem 1.5rem rgba(218,35,29,0.10);
+  transform: translateY(-0.25rem) scale(1.03);
 }
 .benefit-card img {
   max-width: auto;
@@ -265,26 +268,26 @@ p, li, a, span {
 }
 .testimonial-card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0,0,0,0.06);
   padding: 2em 1.5em;
   text-align: center;
-  flex: 1 1 220px;
-  max-width: 300px;
+  flex: 1 1 13.75rem;
+  max-width: 18.75rem;
   margin: 1em 0;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .testimonial-card:hover {
-  box-shadow: 0 6px 24px rgba(218,35,29,0.10);
-  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0.375rem 1.5rem rgba(218,35,29,0.10);
+  transform: translateY(-0.25rem) scale(1.03);
 }
 .testimonial-photo {
-  width: 56px;
-  height: 56px;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1em;
-  border: 2px solid var(--primary-red);
+  border: 0.125rem solid var(--primary-red);
 }
 
 /* CTA Section */
@@ -315,40 +318,46 @@ p, li, a, span {
 
 /* Footer */
 .footer {
-  background: var(--gray);
-  padding: 3em 0 2em 0;
-  color: var(--text);
+  background: var(--gray-light);
+  padding: 2em 0;
+  margin-top: 4em;
 }
-.footer-container {
+
+.footer {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2em;
+  align-items: center;
+  padding: 2em 4em;
 }
-.footer-branding {
-  flex: 1 1 200px;
+
+.footer .logo {
+  margin: 0;
+  font-size: 1.25rem;
 }
+
 .footer-links {
   display: flex;
-  gap: 3em;
-  flex: 2 1 400px;
-  justify-content: flex-end;
+  gap: 4em;
+  margin: 0;
 }
+
 .footer-links h4 {
-  margin-bottom: 0.5em;
+  margin: 0 0 0.5em 0;
   font-size: 1.125rem;
-  color: var(--primary-red);
 }
+
 .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .footer-links a {
-  color: var(--text);
   text-decoration: none;
+  color: var(--text);
   transition: color 0.2s;
 }
+
 .footer-links a:hover {
   color: var(--primary-red);
 }
@@ -369,60 +378,89 @@ p, li, a, span {
 .cta-section { animation-delay: 0.5s; }
 
 /* Responsive Design */
-@media (max-width: 900px) {
+
+@media (max-aspect-ratio: 1/1.5) {
   .hero-content, .feature-block, .footer-container {
     flex-direction: column;
-    align-items: flex-start;
   }
+
   .hero-image, .feature-icon {
-    justify-content: center;
-    margin-top: 2em;
+    margin: 2em 0 0 0;
   }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+
   .footer-links {
     flex-direction: column;
-    gap: 1.5em;
-    align-items: flex-start;
+    align-items: center;
+    gap: 2em;
   }
-}
-@media (max-width: 600px) {
+
   h1 { font-size: 2.25rem; }
   h2 { font-size: 1.5rem; }
   .container { width: 98%; }
   .hero, .features, .benefits, .testimonials, .cta-section, .footer {
     padding: 2em 0;
   }
-  .nav-links { gap: 1em; }
-  .logos { gap: 1em; }
-  .benefit-grid, .testimonial-cards {
-    flex-direction: column;
+  .nav-links { 
     gap: 1em;
-  }}
-
-  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-form { max-width:420px; margin:50px auto;}
-
-.feedback-input {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 10px;
-  line-height: 22px;
-  background-color: transparent;
-  border:3px solid black;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
+  }
+  .logos { 
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .benefit-grid, .testimonial-cards {
+    gap: 1em;
+  }
+  .feature-block {
+    text-align: center;
+  }
+  .feature-text {
+    margin-bottom: 1em;
+  }
+  .hero-cta {
+    justify-content: center;
+  }
+  .logo{
+    margin-left: 0;
+  }
 }
 
-.feedback-input:focus { border:3px solid var(--primary-red); }
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { 
+  max-width: 26.25rem; 
+  margin: 3.125rem auto;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border-radius: 0.625rem;
+  line-height: 1.375rem;
+  background-color: transparent;
+  border: 0.1875rem solid black;
+  transition: all 0.3s;
+  padding: 0.8125rem;
+  margin-bottom: 0.9375rem;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus { 
+  border: 0.1875rem solid var(--primary-red); 
+}
 
 textarea {
-  height: 150px;
+  height: 9.375rem;
   line-height: 150%;
-  resize:vertical;
+  resize: vertical;
 }
