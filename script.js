@@ -37,3 +37,4 @@ document.getElementById('logo').addEventListener('click', function() {
         behavior: 'smooth'
     });
 }); 
+

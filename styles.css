@@ -54,7 +54,7 @@ p, li, a, span {
 
 /* Navigation */
 .navbar {
-  position: sticky;
+  position: relative;
   top: 0;
   background: var(--background);
   box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.03);
@@ -379,7 +379,7 @@ p, li, a, span {
 
 /* Responsive Design */
 
-@media (max-aspect-ratio: 1/1.5) {
+@media (max-aspect-ratio: 986/1000) {
   .hero-content, .feature-block, .footer-container {
     flex-direction: column;
   }
@@ -433,9 +433,16 @@ p, li, a, span {
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-form { 
-  max-width: 26.25rem; 
-  margin: 3.125rem auto;
+.form-container {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
 }
 
 .feedback-input {
