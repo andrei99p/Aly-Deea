@@ -1,9 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aly&Deea Speed Logistics</title>
+  <meta name="description" content="Aly&Deea Speed Logistics - Servicii de transport și logistică rapidă în România. Livrăm marfa ta în cel mai scurt timp, oriunde în țară.">
+  <meta name="keywords" content="transport, livrare marfă, logistică, transport România, servicii logistice">
+  <meta name="author" content="Aly&Deea Speed Logistics">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TransportationBusiness",
+    "name": "Aly&Deea Speed Logistics",
+    "image": "Res/logos/Logo.png",
+    "description": "Servicii de transport și logistică rapidă în România. Livrăm marfa ta în cel mai scurt timp, oriunde în țară.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "RO"
+    },
+    "url": "https://alydeea.ro",
+    "telephone": "+40730130355",
+    "email": "alydeea.office@gmail.com",
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    "sameAs": [],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Romania"
+    },
+    "serviceType": [
+      "Transport marfa",
+      "Transport rapid",
+      "Siguranță garantată",
+      "Optimizare rută",
+      "Suport dedicat",
+      "Flexibilitate"
+    ]
+  }
+  </script>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alydeea.ro/">
+  <meta property="og:title" content="Aly&Deea Speed Logistics - Servicii de Transport Rapid">
+  <meta property="og:description" content="Servicii de transport și logistică rapidă în România. Livrăm marfa ta în cel mai scurt timp, oriunde în țară.">
+  <meta property="og:image" content="Res/logos/Logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://alydeea.ro/">
+  <meta property="twitter:title" content="Aly&Deea Speed Logistics - Servicii de Transport Rapid">
+  <meta property="twitter:description" content="Servicii de transport și logistică rapidă în România. Livrăm marfa ta în cel mai scurt timp, oriunde în țară.">
+  <meta property="twitter:image" content="Res/logos/Logo.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Res/logos/logo.ico">
+  <link rel="apple-touch-icon" href="Res/logos/Logo.png">
+  
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=DM+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +81,7 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container nav-container">
-      <div class="logo" id="logo"><img src="Res/Logo.png" alt="Aly&Deea Speed Logistics" draggable="false"></div>
+      <div class="logo" id="logo"><img src="Res/logos/Logo.png" alt="Aly&Deea Speed Logistics" draggable="false"></div>
       <ul class="nav-links">
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -23,14 +93,14 @@
     <div class="container hero-content">
       <div class="hero-text">
         <h1>Bine ați venit la Aly&Deea Speed Logistics</h1>
-        <h4>Una dintre cele mai importante companii de logistica din Romania, dedicată serviciilor logistice rapide și eficiente pentru afacerea ta.</h4>
+        <h4>Una dintre cele mai importante companii de logistică din România, dedicată serviciilor logistice rapide și eficiente pentru afacerea ta.</h4>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary">Solicită ofertă</a>
           <a href="#features" class="btn btn-secondary">Serviciile noastre</a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="Res/logo1.png" alt="Hero Illustration" draggable="false" />
+        <img src="Res/logos/logo1.png" alt="Hero Illustration" draggable="false" />
       </div>
     </div>
   </section>
@@ -42,11 +112,14 @@
     </div>
 
     <div class="container logos">
-      <img src="Res/Boma.webp" class="trusted-logo" draggable="false">
-      <img src="Res/Elis.png" class="trusted-logo" draggable="false">
-      <img src="Res/Elpreco.png" class="trusted-logo" draggable="false">
-      <img src="Res/Dedeman.svg" class="trusted-logo" draggable="false">
-      <img src="Res/Adeplast.svg" class="trusted-logo" draggable="false">
+      <img src="Res/logos/Adeplast.svg" class="trusted-logo" draggable="false">
+      <img src="Res/logos/Boma.webp" class="trusted-logo" draggable="false">
+      <img src="Res/logos/Dedeman.svg" class="trusted-logo" draggable="false">
+      <img src="Res/logos/Elis.png" class="trusted-logo" draggable="false">
+      <img src="Res/logos/Elpreco.png" class="trusted-logo" draggable="false">
+      <img src="Res/logos/petra.webp" class="trusted-logo" draggable="false">
+      <img src="Res/logos/xella.png" class="trusted-logo" draggable="false">
+      <img src="Res/logos/ytong.png" class="trusted-logo" draggable="false">
       <!--<img src="Res/logo2.svg" alt="Partener 2" class="trusted-logo">
       <img src="Res/logo3.svg" alt="Partener 3" class="trusted-logo">
       <img src="Res/logo4.svg" alt="Partener 4" class="trusted-logo">-->
@@ -62,7 +135,7 @@
           <p>Livrăm marfa ta în cel mai scurt timp, oriunde în țară.</p>
         </div>
         <div class="feature-icon">
-          <img src="Res/stopwatch.png" alt="Feature 1 Icon" draggable="false">
+          <img src="Res/icons/stopwatch.png" alt="Feature 1 Icon" draggable="false">
         </div>
       </div>
       <div class="feature-block">
@@ -71,16 +144,16 @@
           <p>Urmărești transportul tău în timp real, cu actualizări la fiecare pas.</p>
         </div>
         <div class="feature-icon">
-          <img src="Res/pin.png" alt="Feature 2 Icon" draggable="false">
+          <img src="Res/icons/pin.png" alt="Feature 2 Icon" draggable="false">
         </div>
       </div>
       <div class="feature-block">
         <div class="feature-text">
           <h2>Siguranță garantată</h2>
-          <p>Asigurăm cele mai bune conditii de transport pentru marfa ta.</p>
+          <p>Asigurăm cele mai bune condiții de transport pentru marfa ta.</p>
         </div>
         <div class="feature-icon">
-          <img src="Res/Check2.png" alt="Feature 3 Icon" draggable="false">
+          <img src="Res/icons/Check2.png" alt="Feature 3 Icon" draggable="false">
         </div>
       </div>
     </div>
@@ -90,17 +163,17 @@
   <section class="benefits" id="benefits">
     <div class="container benefit-grid">
       <div class="benefit-card">
-        <img src="Res/route.png" alt="Benefit 1" draggable="false">
+        <img src="Res/icons/route.png" alt="Benefit 1" draggable="false">
         <h3>Optimizare rută</h3>
         <p>Planificăm cele mai eficiente rute pentru a reduce costurile și timpul de livrare.</p>
       </div>
       <div class="benefit-card">
-        <img src="Res/support.png" alt="Benefit 2" draggable="false">
+        <img src="Res/icons/support.png" alt="Benefit 2" draggable="false">
         <h3>Suport dedicat</h3>
         <p>Echipa noastră este disponibilă pentru orice întrebare sau solicitare.</p>
       </div>
       <div class="benefit-card">
-        <img src="Res/ideas.png" alt="Benefit 3" draggable="false">
+        <img src="Res/icons/ideas.png" alt="Benefit 3" draggable="false">
         <h3>Flexibilitate</h3>
         <p>Oferim soluții personalizate pentru transportul mărfurilor, indiferent de volum sau destinație.</p>
       </div>
@@ -132,17 +205,17 @@
   <section class="cta-section" id="contact">
     <div class="container cta-content">
       <h2>Ești gata să transporți cu noi?</h2>
-      <h4 style="color: black;">Contactează-ne pentru o ofertă personalizată și descoperă avantajele colaborării cu o companie logistica de top !</h4>
+      <h4 style="color: black;">Contactează-ne pentru o ofertă personalizată și descoperă avantajele colaborării cu o companie logistică de top!</h4>
         
       <div class="form-container">
         <form action="https://api.web3forms.com/submit" method="POST"> 
 
-          <input type="hidden" name="access_key" value="aa661a66-d337-4247-b2ec-39b5a690dd07">
+          <input type="hidden" name="access_key" value="d51e6778-fc8e-40f0-887a-a1d5aa525eea">
           
-          <input name="name" type="text" class="feedback-input" placeholder="Nume" required/>   
-          <input name="email" type="text" class="feedback-input" placeholder="Email" required />
-          <textarea name="text" class="feedback-input" placeholder="Mesaj" maxlength="300" required></textarea>
-          <input type="text" name="honeypot" style="display:none">
+          <input name="Nume" type="text" class="feedback-input" placeholder="Nume" required/>   
+          <input name="Email" type="email" class="feedback-input" placeholder="Email" required />
+          <textarea name="Mesaj" type="text" class="feedback-input" placeholder="Mesaj" maxlength="300" required></textarea>
+          <input class="honey" type="text" autocomplete="off" name="NAME" style="display:none" placeholder="NAME">
           <input type="submit" class="btn btn-primary" value="Contactează-ne"/>
         </form>
       </div>
@@ -154,7 +227,7 @@
   <footer class="footer" >
 
         <!--<div class="logo"><img src="Res/Logo.png" alt="Aly&Deea Speed Logistics" style="height: 40px;"></div>-->
-        <p class="logo">Aly&Deea Speed Logistics S.R.L.</p>
+      <p class="logo">Aly&Deea Speed Logistics S.R.L.</p>
 
       <div class="footer-links">
         <div>
@@ -166,6 +239,7 @@
         <div>
           <h4>Contact</h4>
           <ul>
+            <li><a href="tel:+40730130355">0730 130 355</a></li>
             <li><a href="mailto:info@alydeea.com">alydeea.office@gmail.com</a></li>
           </ul>
         </div>
